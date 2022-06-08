@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Casa de Cambio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <main class="container bg-warning rounded mt-3 p-4">
+        <h1>Conversor de Moneda</h1>
+        <form action="" class="row">
+            <div class="col-md-4 mb-3">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" id="cantidad" placeholder="1.00" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="divisa-origen" class="form-label">Desde la Divisa</label>
+                <select name="divisa-origen" id="divisa-origen" class="form-control"></select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="divisa-destino" class="form-label">A la Divisa</label>
+                <select name="divisa-destino" id="divisa-destino" class="form-control"></select>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-dark">Calcular</button>
+            </div>
+        </form>
+    </main>
+    <script src='main.js'></script>
+</body>
+</html>
