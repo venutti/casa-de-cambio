@@ -11,10 +11,10 @@
 <body>
     <main class="container bg-warning rounded mt-3 p-4 shadow">
         <h1>Conversor de Moneda</h1>
-        <form action="" class="row justify-content-center">
+        <form id="conversor" class="row justify-content-center">
             <div class="col-md-4 mb-3">
                 <label for="cantidad" class="form-label">Cantidad</label>
-                <input type="number" id="cantidad" placeholder="1.00" class="form-control">
+                <input type="number" id="cantidad" placeholder="0.00" class="form-control">
             </div>
             <div class="col-md-4 mb-3">
                 <label for="divisa-origen" class="form-label">Desde la Divisa</label>
@@ -24,12 +24,10 @@
                 <label for="divisa-destino" class="form-label">A la Divisa</label>
                 <select name="divisa-destino" id="divisa-destino" class="form-control"></select>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <input class="form-control text-center" type="text" placeholder="Apreta CALCULAR" disabled>
+            <div class="col-md-5 mb-3 mb-md-0">
+                <input id="input-respuesta" class="form-control text-center" type="text" placeholder="--- = ---" disabled>
             </div>
             <button type="button" class="btn btn-outline-dark col-md-3 col-lg-2">Calcular</button>
-            
-
         </form>
     </main>
     <script src='main.js'></script>
